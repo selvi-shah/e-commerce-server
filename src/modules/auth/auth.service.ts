@@ -1,7 +1,6 @@
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
-import { getRepository } from 'typeorm';
-
+import { AppDataSource } from '../../ormconfig';
 import { User } from './user.entity';
 import { User as IUser } from './interfaces/user.interface';
 import { CreateUserDTO } from './dto/create-user.dto';
@@ -13,7 +12,7 @@ import { WrongCredentialsException } from '../../exceptions/WrongCredentialExcep
 import { EmailOrUsernameInUseException } from '../../exceptions/EmailOrUsernameInUseException';
 
 export class AuthService {
-  private userRepository = getRepository(User);
+  private userRepository = AppDataSource.getRepository(User);
 
   signUp = async (userData: CreateUserDTO) => {
     const { username, email, password } = userData;
@@ -40,7 +39,7 @@ export class AuthService {
   };
 
   signIn = async ({ email, password }: LoginUserDTO) => {
-    const existingUser = await this.userRepository.findOne({ email });
+    const existingUser = await this.userRepository.findOne({ where: { email } });
 
     if (!existingUser) {
       throw new WrongCredentialsException();

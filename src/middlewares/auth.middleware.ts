@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { Response, Request, NextFunction } from 'express';
-import { getRepository } from 'typeorm';
+import { AppDataSource } from '../ormconfig';
 
 import { User } from '../modules/auth/user.entity';
 import { DataStoredInToken } from '../types/dataStoredInToken.interface';
@@ -13,7 +13,7 @@ export const authMiddleware = async (
   _: Response,
   next: NextFunction
 ) => {
-  const userRepository = getRepository(User);
+  const userRepository = AppDataSource.getRepository(User);
   const secret = process.env.JWT_SECRET;
   const token = req.header('x-auth-token');
 
@@ -29,7 +29,7 @@ export const authMiddleware = async (
 
   try {
     const decoded = jwt.verify(token, secret) as DataStoredInToken;
-    const user = await userRepository.findOne(decoded.id);
+    const user = await userRepository.findOne({ where: {id: decoded.id } });
 
     if (!user) {
       next(new WrongAuthenticationTokenException());

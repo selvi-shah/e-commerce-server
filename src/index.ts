@@ -1,13 +1,16 @@
 import 'dotenv/config';
 import 'reflect-metadata';
-import { createConnection } from 'typeorm';
+import { AppDataSource } from './ormconfig';
 
-import { config } from './ormconfig';
+
 import { validateEnv } from './utils/validateEnv';
 import { App } from './app';
 import { User } from './modules/auth/user.entity';
 import { AuthController } from './modules/auth/auth.controller';
 import { ProductController } from './modules/product/product.controller';
+import { ReviewController } from './review/review.controller';
+
+
 
 // expand Request interface with a new property: user: User
 declare global {
@@ -20,17 +23,19 @@ declare global {
 
 validateEnv();
 
-(async (): Promise<void> => {
+
+(async (): Promise<any> => {
   try {
-    const connection = await createConnection(config);
-    connection.runMigrations();
+    const connection = await AppDataSource.initialize();
+    // connection.runMigrations();
+
     console.log(`Is connected: ${connection.isConnected}`);
   } catch (err) {
     console.log('Error while connecting to the database', err);
     return err;
   }
 
-  const app = new App([new AuthController(), new ProductController()]);
+  const app = new App([new AuthController(), new ProductController(), new ReviewController()]);
   app.listen();
 })();
 

@@ -1,11 +1,12 @@
-import { getRepository, DeleteResult } from 'typeorm';
+import { DeleteResult } from 'typeorm';
+import { AppDataSource } from '../../ormconfig';
 
 import { Product } from './product.entity';
 import { AddProductDTO } from './dto/add-product.dto';
 import { ProductNotFoundException } from '../../exceptions/ProductNotFoundException';
 
 export class ProductService {
-  private productRepository = getRepository(Product);
+  private productRepository = AppDataSource.getRepository(Product);
 
   addProduct = async (addProductDTO: AddProductDTO): Promise<Product> => {
     const newProduct = this.productRepository.create({
@@ -43,7 +44,7 @@ export class ProductService {
     }
 
     return this.productRepository.find({
-      where: { type }
+      where: { type: type as any }
     });
   };
 
