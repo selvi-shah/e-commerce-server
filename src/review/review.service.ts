@@ -20,4 +20,13 @@ getReviewsByProductId = async (id: string): Promise<Review[]> => {
     const result = await this.reviewRepository.find({ where: {Product: {id: id}}})
     return result;
     }
+
+getReviewsByUserAndProduct = async (userid: string, productid: string): Promise<Review[]> => {
+    const result = await this.reviewRepository.find
+    ({ where: {
+        User: { id: userid },
+        Product: { id: productid }
+    }})
+    return result;
+}
 }

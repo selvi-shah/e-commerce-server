@@ -18,6 +18,7 @@ export class ReviewController implements Controller {
         this.router
         .post(this.path, authMiddleware, this.addReview)
         .get(`${this.path}/:id`, this.getReviewsByProductId)
+        .get(`${this.path}/user/:userId/product/:productId`, this.getReviewsByUserAndProduct)
     };
 
     private addReview = async (
@@ -46,6 +47,21 @@ export class ReviewController implements Controller {
 
             const reviews = await this.reviewService.getReviewsByProductId(id)
             res.status(200).json(reviews);
+        } catch (error) {
+            next(error)
+        }
+    }
+
+    private getReviewsByUserAndProduct = async (
+        req: Request,
+        res: Response,
+        next: NextFunction
+    ): Promise<void> => {
+        try {
+            const { userId, productId } = req.params;
+
+            const review = await this.reviewService.getReviewsByUserAndProduct(userId, productId)
+            res.status(200).json(review);
         } catch (error) {
             next(error)
         }
