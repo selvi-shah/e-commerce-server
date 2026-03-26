@@ -45,13 +45,13 @@ export class ProductService {
     return product;
   };
 
-  getProductsByType = async (type: string): Promise<Product[]> => {
+  getProductsByType = async (type: string, page: number, limit: number): Promise<[Product[], number]> => {
     if (type === 'all') {
-      return this.productRepository.find({where: { deletedAt: IsNull()}});
+      return this.productRepository.findAndCount({where: { deletedAt: IsNull()}, skip: (page - 1) * limit, take: limit});
     }
 
-    return this.productRepository.find({
-      where: { type: type as any, deletedAt: IsNull() }
+    return this.productRepository.findAndCount({
+      where: { type: type as any, deletedAt: IsNull() }, skip: (page - 1) * limit, take: limit
     });
   };
 

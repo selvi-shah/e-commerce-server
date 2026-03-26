@@ -93,9 +93,11 @@ export class ProductController implements Controller {
   ): Promise<void> => {
     try {
       const { type } = req.params;
+      const page = Number(req.query.page);
+      const limit = Number(req.query.limit);
 
-      const products = await this.productService.getProductsByType(type);
-      res.status(200).json(products);
+      const [products] = await this.productService.getProductsByType(type, page, limit);
+      res.status(200).json({products, total: products.length});
     } catch (err) {
       next(new ProductsNotFoundException());
     }
