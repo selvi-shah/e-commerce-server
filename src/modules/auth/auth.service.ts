@@ -35,7 +35,8 @@ export class AuthService {
     const user = { id: savedUser.id, username: savedUser.username };
 
     const token = this.createToken(savedUser);
-    return { token, ...user };
+    const refreshToken = this.createRefreshToken(savedUser);
+    return { token, refreshToken, ...user };
   };
 
   signIn = async ({ email, password }: LoginUserDTO) => {
@@ -53,7 +54,8 @@ export class AuthService {
 
     const { id, username } = existingUser;
     const token = this.createToken(existingUser);
-    return { token, id, username };
+    const refreshToken = this.createRefreshToken(existingUser);
+    return { token, refreshToken, id, username };
   };
 
   deleteAccount = async (id: string) => {
@@ -75,5 +77,17 @@ export class AuthService {
     }
 
     return jwt.sign(dataStoredInToken, secret, { expiresIn });
+  };
+
+  createRefreshToken = ({ id, username }: IUser): string => {
+    const expiresIn = 60 * 60 * 24 * 7;
+    const refreshSecret = process.env.JWT_SECRET;
+    const dataStoredInToken: DataStoredInToken = { id, username };
+
+    if(!refreshSecret) {
+      throw new HttpException(500, 'Something goes wrong');
+    }
+
+    return jwt.sign(dataStoredInToken, refreshSecret, { expiresIn });
   };
 }

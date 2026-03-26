@@ -20,6 +20,7 @@ export class ProductController implements Controller {
     this.router
       .post(this.path, validationMiddleware(AddProductDTO), this.addProduct)
       .delete(`${this.path}/:id`, this.deleteProduct)
+      .delete(`${this.path}/softdelete/:id`, this.softDelete)
       .get(`${this.path}/:id`, this.getProduct)
       .get(`${this.path}/type/:type`, this.getProductsByType)
       .get(`${this.path}/query/:query`, this.getProductsByQuery);
@@ -52,6 +53,21 @@ export class ProductController implements Controller {
       res.status(200).json({ success: true });
     } catch (err) {
       next(err);
+    }
+  };
+
+  private softDelete = async (
+    req: Request,
+    res: Response,
+    next: NextFunction
+  ): Promise<void> => {
+    try {
+      const { id } = req.params;
+
+      await this.productService.softDeleteProduct(id);
+      res.status(200).json({ success: true, message: "Product deleted successfully"});
+    } catch (error) {
+      next(error)
     }
   };
 

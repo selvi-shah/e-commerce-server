@@ -31,4 +31,7 @@ export class Product {
 
   @Column('text', { array: true })
   images!: string[];
+
+  @Column('timestamp', { nullable: true})
+  deletedAt!: Date | null;
 }

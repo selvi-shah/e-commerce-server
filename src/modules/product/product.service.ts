@@ -1,4 +1,5 @@
-import { DeleteResult } from 'typeorm';
+import { DeleteResult, IsNull } from 'typeorm';
+import { UpdateResult } from 'typeorm';
 import { AppDataSource } from '../../ormconfig';
 
 import { Product } from './product.entity';
@@ -26,9 +27,15 @@ export class ProductService {
     return result;
   };
 
+  softDeleteProduct = async (id: string): Promise<UpdateResult> => {
+    const result = await this.productRepository.update({ id }, { deletedAt: new Date() });
+
+    return result;
+  }
+
   getProduct = async (id: string): Promise<Product> => {
     const product = await this.productRepository.findOne({
-      where: { id }
+      where: { id, deletedAt: IsNull() }
     });
 
     if (!product) {
@@ -40,11 +47,11 @@ export class ProductService {
 
   getProductsByType = async (type: string): Promise<Product[]> => {
     if (type === 'all') {
-      return this.productRepository.find();
+      return this.productRepository.find({where: { deletedAt: IsNull()}});
     }
 
     return this.productRepository.find({
-      where: { type: type as any }
+      where: { type: type as any, deletedAt: IsNull() }
     });
   };
 
