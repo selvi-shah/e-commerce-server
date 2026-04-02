@@ -9,6 +9,7 @@ import { User } from './modules/auth/user.entity';
 import { AuthController } from './modules/auth/auth.controller';
 import { ProductController } from './modules/product/product.controller';
 import { ReviewController } from './review/review.controller';
+import { CartController } from './modules/cart/cart.controller';
 
 
 
@@ -35,7 +36,7 @@ validateEnv();
     return err;
   }
 
-  const app = new App([new AuthController(), new ProductController(), new ReviewController()]);
+  const app = new App([new AuthController(), new ProductController(), new ReviewController(), new CartController()]);
   app.listen();
 })();
 
