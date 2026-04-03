@@ -2,6 +2,7 @@ import { Column, Entity, ManyToOne, OneToMany, PrimaryGeneratedColumn } from "ty
 import { User } from "../auth/user.entity";
 import { OrderItems } from "./order.item.entity";
 import { OrderStatus } from "../../types/order-status.type";
+import { PaymentStatus } from "../../types/payment-status.type";
 
 
 @Entity('order')
@@ -20,4 +21,7 @@ export class Order {
 
     @Column('varchar')
     status!: OrderStatus
+
+    @Column('varchar', {default: 'unpaid'})
+    paymentStatus!: PaymentStatus
 }
