@@ -12,6 +12,18 @@ import { ReviewController } from './review/review.controller';
 import { CartController } from './modules/cart/cart.controller';
 import { OrderController } from './modules/order/order.controller';
 
+const crypto = require('crypto');
+
+const razorpay_order_id = 'order_SZ25rmKLMoulac'; // your razorpay order id
+const razorpay_payment_id = 'pay_test123'; // fake payment id
+const secret = process.env.RAZORPAY_KEY_SECRET; // your actual secret from .env
+
+const signature = crypto
+    .createHmac('sha256', secret)
+    .update(razorpay_order_id + '|' + razorpay_payment_id)
+    .digest('hex');
+
+console.log(signature);
 
 
 // expand Request interface with a new property: user: User

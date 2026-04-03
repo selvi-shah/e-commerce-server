@@ -2,7 +2,7 @@ import { IsNotEmpty, IsNumber, IsString } from "class-validator";
 
 
 export class CreateOrderDTO {
-    @IsString()
+        @IsString()
         @IsNotEmpty()
         productId!: string;
     
