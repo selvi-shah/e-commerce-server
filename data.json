@@ -1,0 +1,632 @@
+{
+  "benches": [
+    {
+      "name": "Classic pink bench",
+      "collection": "exterior",
+      "type": "benches",
+      "price": 95.99,
+      "color": "pink",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/WFBdvXg/Classic-pink-bench.png",
+        "https://i.ibb.co/WFBdvXg/Classic-pink-bench.png",
+        "https://i.ibb.co/WFBdvXg/Classic-pink-bench.png"
+      ]
+    },
+    {
+      "name": "Modern simple bench",
+      "collection": "exterior",
+      "type": "benches",
+      "price": 175.99,
+      "color": "brown",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/k9vd54q/Modern-simple-bench.png",
+        "https://i.ibb.co/k9vd54q/Modern-simple-bench.png",
+        "https://i.ibb.co/k9vd54q/Modern-simple-bench.png"
+      ]
+    },
+    {
+      "name": "White classic bench",
+      "collection": "exterior",
+      "type": "benches",
+      "price": 125.99,
+      "color": "white",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/CKYGjSb/White-classic-bench.png",
+        "https://i.ibb.co/CKYGjSb/White-classic-bench.png",
+        "https://i.ibb.co/CKYGjSb/White-classic-bench.png"
+      ]
+    },
+    {
+      "name": "White Modern bench",
+      "collection": "exterior",
+      "type": "benches",
+      "price": 155.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/HPBKKCK/White-Modern-bench.png",
+        "https://i.ibb.co/HPBKKCK/White-Modern-bench.png",
+        "https://i.ibb.co/HPBKKCK/White-Modern-bench.png"
+      ]
+    },
+    {
+      "name": "Wooden modern bench",
+      "collection": "exterior",
+      "type": "benches",
+      "price": 195.99,
+      "color": "brown",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/QbtjJkK/Wooden-modern-bench.png",
+        "https://i.ibb.co/QbtjJkK/Wooden-modern-bench.png",
+        "https://i.ibb.co/QbtjJkK/Wooden-modern-bench.png"
+      ]
+    }
+  ],
+  "flowerpots": [
+    {
+      "name": "Classic wooden flowerpot",
+      "collection": "exterior",
+      "type": "flowerpots",
+      "price": 15.99,
+      "color": "brown",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/1r1B91P/Classic-wooden-flower-pot.png",
+        "https://i.ibb.co/1r1B91P/Classic-wooden-flower-pot.png",
+        "https://i.ibb.co/1r1B91P/Classic-wooden-flower-pot.png"
+      ]
+    },
+    {
+      "name": "Modern minimalistic flowerpot",
+      "collection": "exterior",
+      "type": "flowerpots",
+      "price": 25.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/G0d62R5/Modern-minimalistic-flower-pot.png",
+        "https://i.ibb.co/G0d62R5/Modern-minimalistic-flower-pot.png",
+        "https://i.ibb.co/G0d62R5/Modern-minimalistic-flower-pot.png"
+      ]
+    },
+    {
+      "name": "Modern white flowerpot",
+      "collection": "exterior",
+      "type": "flowerpots",
+      "price": 21.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/0Vp4gFx/Modern-white-flower-pot.png",
+        "https://i.ibb.co/0Vp4gFx/Modern-white-flower-pot.png",
+        "https://i.ibb.co/0Vp4gFx/Modern-white-flower-pot.png"
+      ]
+    },
+    {
+      "name": "Retro wooden flowerpot",
+      "collection": "exterior",
+      "type": "flowerpots",
+      "price": 21.99,
+      "color": "brown",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/s3w1tTP/Retro-wooden-flower-pot.png",
+        "https://i.ibb.co/s3w1tTP/Retro-wooden-flower-pot.png",
+        "https://i.ibb.co/s3w1tTP/Retro-wooden-flower-pot.png"
+      ]
+    },
+    {
+      "name": "Simple modern white flowerpot",
+      "collection": "exterior",
+      "type": "flowerpots",
+      "price": 14.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/zH23dKf/Simple-modern-white-flower-pot.png",
+        "https://i.ibb.co/zH23dKf/Simple-modern-white-flower-pot.png",
+        "https://i.ibb.co/zH23dKf/Simple-modern-white-flower-pot.png"
+      ]
+    },
+    {
+      "name": "Stone flowerpot",
+      "collection": "exterior",
+      "type": "flowerpots",
+      "price": 43.99,
+      "color": "brown",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/r7X9WQW/Stone-flower-pot.png",
+        "https://i.ibb.co/r7X9WQW/Stone-flower-pot.png",
+        "https://i.ibb.co/r7X9WQW/Stone-flower-pot.png"
+      ]
+    }
+  ],
+  "plants": [
+    {
+      "name": "Aloe Vera plant",
+      "collection": "exterior",
+      "type": "plants",
+      "price": 20.99,
+      "color": "green",
+      "character": "fancy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/nP2J8Hh/Aloe-Vera-plant.png",
+        "https://i.ibb.co/nP2J8Hh/Aloe-Vera-plant.png",
+        "https://i.ibb.co/nP2J8Hh/Aloe-Vera-plant.png"
+      ]
+    },
+    {
+      "name": "Green cactus plant",
+      "collection": "exterior",
+      "type": "plants",
+      "price": 25.99,
+      "color": "green",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/WvXBvC0/Green-cactus-plant.png",
+        "https://i.ibb.co/WvXBvC0/Green-cactus-plant.png",
+        "https://i.ibb.co/WvXBvC0/Green-cactus-plant.png"
+      ]
+    },
+    {
+      "name": "Green leaf plant",
+      "collection": "exterior",
+      "type": "plants",
+      "price": 12.99,
+      "color": "green",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/3M0Pb3M/Green-leaf-plant.png",
+        "https://i.ibb.co/3M0Pb3M/Green-leaf-plant.png",
+        "https://i.ibb.co/3M0Pb3M/Green-leaf-plant.png"
+      ]
+    },
+    {
+      "name": "Green leafed plant",
+      "collection": "exterior",
+      "type": "plants",
+      "price": 32.99,
+      "color": "green",
+      "character": "fancy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/9pvb0sQ/Green-leafed-plant.png",
+        "https://i.ibb.co/9pvb0sQ/Green-leafed-plant.png",
+        "https://i.ibb.co/9pvb0sQ/Green-leafed-plant.png"
+      ]
+    },
+    {
+      "name": "Green succulent",
+      "collection": "exterior",
+      "type": "plants",
+      "price": 18.99,
+      "color": "green",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/BjrZthh/Green-succulent.png",
+        "https://i.ibb.co/BjrZthh/Green-succulent.png",
+        "https://i.ibb.co/BjrZthh/Green-succulent.png"
+      ]
+    },
+    {
+      "name": "Potted green plant",
+      "collection": "exterior",
+      "type": "plants",
+      "price": 28.99,
+      "color": "green",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/7t3NdNy/Potted-green-plant.png",
+        "https://i.ibb.co/7t3NdNy/Potted-green-plant.png",
+        "https://i.ibb.co/7t3NdNy/Potted-green-plant.png"
+      ]
+    }
+  ],
+  "chairs": [
+    {
+      "name": "Classic white chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 55.99,
+      "color": "white",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/9qRw9zS/Classic-white-chair.png",
+        "https://i.ibb.co/9qRw9zS/Classic-white-chair.png",
+        "https://i.ibb.co/9qRw9zS/Classic-white-chair.png"
+      ]
+    },
+    {
+      "name": "Courtyard chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 25.99,
+      "color": "white",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/Q6hXPrr/Courtyard-chair.png",
+        "https://i.ibb.co/Q6hXPrr/Courtyard-chair.png",
+        "https://i.ibb.co/Q6hXPrr/Courtyard-chair.png"
+      ]
+    },
+    {
+      "name": "Leather black chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 125.99,
+      "color": "black",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/Sx4WPNN/Leather-black-chair.png",
+        "https://i.ibb.co/Sx4WPNN/Leather-black-chair.png",
+        "https://i.ibb.co/Sx4WPNN/Leather-black-chair.png"
+      ]
+    },
+    {
+      "name": "Minimal plastic black chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 95.99,
+      "color": "black",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/Hd5KfY9/Minimal-plastic-black-chair.png",
+        "https://i.ibb.co/Hd5KfY9/Minimal-plastic-black-chair.png",
+        "https://i.ibb.co/Hd5KfY9/Minimal-plastic-black-chair.png"
+      ]
+    },
+    {
+      "name": "Minimal plastic chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 45.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/ChnZvFY/Minimal-plastic-chair.png",
+        "https://i.ibb.co/ChnZvFY/Minimal-plastic-chair.png",
+        "https://i.ibb.co/ChnZvFY/Minimal-plastic-chair.png"
+      ]
+    },
+    {
+      "name": "Old wooden with flowers",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 25.99,
+      "color": "brown",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/2KyWgS3/Old-wooden-with-flowers.png",
+        "https://i.ibb.co/2KyWgS3/Old-wooden-with-flowers.png",
+        "https://i.ibb.co/2KyWgS3/Old-wooden-with-flowers.png"
+      ]
+    },
+    {
+      "name": "Simple elegant black chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 35.99,
+      "color": "black",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/qJxm6G6/Simple-elegant-black-chair.png",
+        "https://i.ibb.co/qJxm6G6/Simple-elegant-black-chair.png",
+        "https://i.ibb.co/qJxm6G6/Simple-elegant-black-chair.png"
+      ]
+    },
+    {
+      "name": "Simple orange chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 55.99,
+      "color": "orange",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/3NcCsKs/Simple-orange-chair.png",
+        "https://i.ibb.co/3NcCsKs/Simple-orange-chair.png",
+        "https://i.ibb.co/3NcCsKs/Simple-orange-chair.png"
+      ]
+    },
+    {
+      "name": "Small simple chair",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 25.99,
+      "color": "white",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/JHfm832/Small-simple-chair.png",
+        "https://i.ibb.co/JHfm832/Small-simple-chair.png",
+        "https://i.ibb.co/JHfm832/Small-simple-chair.png"
+      ]
+    },
+    {
+      "name": "White chair with cat",
+      "collection": "interior",
+      "type": "chairs",
+      "price": 175.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/8XJ8jSb/White-chair-with-cat.png",
+        "https://i.ibb.co/8XJ8jSb/White-chair-with-cat.png",
+        "https://i.ibb.co/8XJ8jSb/White-chair-with-cat.png"
+      ]
+    }
+  ],
+  "clocks": [
+    {
+      "name": "Classic alarm clock",
+      "collection": "interior",
+      "type": "clocks",
+      "price": 25.99,
+      "color": "black",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/Y7Gvcn0/Classic-alarm-clock.png",
+        "https://i.ibb.co/Y7Gvcn0/Classic-alarm-clock.png",
+        "https://i.ibb.co/Y7Gvcn0/Classic-alarm-clock.png"
+      ]
+    },
+    {
+      "name": "Standard white clock",
+      "collection": "interior",
+      "type": "clocks",
+      "price": 35.99,
+      "color": "white",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/2g3V0XJ/Classic-white-clock.png",
+        "https://i.ibb.co/2g3V0XJ/Classic-white-clock.png",
+        "https://i.ibb.co/2g3V0XJ/Classic-white-clock.png"
+      ]
+    },
+    {
+      "name": "Math clock",
+      "collection": "interior",
+      "type": "clocks",
+      "price": 65.99,
+      "color": "black",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/SsWPNVz/Math-clock.png",
+        "https://i.ibb.co/SsWPNVz/Math-clock.png",
+        "https://i.ibb.co/SsWPNVz/Math-clock.png"
+      ]
+    },
+    {
+      "name": "Mini white clock",
+      "collection": "interior",
+      "type": "clocks",
+      "price": 15.99,
+      "color": "white",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/BwmjkT0/Mini-white-clock.png",
+        "https://i.ibb.co/BwmjkT0/Mini-white-clock.png",
+        "https://i.ibb.co/BwmjkT0/Mini-white-clock.png"
+      ]
+    },
+    {
+      "name": "Modern silver clock",
+      "collection": "interior",
+      "type": "clocks",
+      "price": 15.99,
+      "color": "silver",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/kHGTsYh/Modern-silver-clock.png",
+        "https://i.ibb.co/kHGTsYh/Modern-silver-clock.png",
+        "https://i.ibb.co/kHGTsYh/Modern-silver-clock.png"
+      ]
+    },
+    {
+      "name": "Small red clock",
+      "collection": "interior",
+      "type": "clocks",
+      "price": 15.99,
+      "color": "red",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/yygwHfB/Small-red-clock.png",
+        "https://i.ibb.co/yygwHfB/Small-red-clock.png",
+        "https://i.ibb.co/yygwHfB/Small-red-clock.png"
+      ]
+    }
+  ],
+  "lamps": [
+    {
+      "name": "Standard hanging lamp",
+      "collection": "interior",
+      "type": "lamps",
+      "price": 25.99,
+      "color": "white",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/tD5dJqD/Classic-hanging-lamp.png",
+        "https://i.ibb.co/tD5dJqD/Classic-hanging-lamp.png",
+        "https://i.ibb.co/tD5dJqD/Classic-hanging-lamp.png"
+      ]
+    },
+    {
+      "name": "Classic night lamp",
+      "collection": "interior",
+      "type": "lamps",
+      "price": 35.99,
+      "color": "white",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/NnYdCyF/Classic-night-lamp.png",
+        "https://i.ibb.co/NnYdCyF/Classic-night-lamp.png",
+        "https://i.ibb.co/NnYdCyF/Classic-night-lamp.png"
+      ]
+    },
+    {
+      "name": "Gold standard lamp",
+      "collection": "interior",
+      "type": "lamps",
+      "price": 170.99,
+      "color": "gold",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/R3JKK1D/Gold-classic-lamp.png",
+        "https://i.ibb.co/R3JKK1D/Gold-classic-lamp.png",
+        "https://i.ibb.co/R3JKK1D/Gold-classic-lamp.png"
+      ]
+    },
+    {
+      "name": "Minimal slim black lamp",
+      "collection": "interior",
+      "type": "lamps",
+      "price": 75.99,
+      "color": "black",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/TP8wp9c/Minimal-slim-black-lamp.png",
+        "https://i.ibb.co/TP8wp9c/Minimal-slim-black-lamp.png",
+        "https://i.ibb.co/TP8wp9c/Minimal-slim-black-lamp.png"
+      ]
+    },
+    {
+      "name": "Modern yellow lamp",
+      "collection": "interior",
+      "type": "lamps",
+      "price": 95.99,
+      "color": "yellow",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/YfnBQwZ/Modern-yellow-lamp.png",
+        "https://i.ibb.co/YfnBQwZ/Modern-yellow-lamp.png",
+        "https://i.ibb.co/YfnBQwZ/Modern-yellow-lamp.png"
+      ]
+    },
+    {
+      "name": "Silver wall lamp",
+      "collection": "interior",
+      "type": "lamps",
+      "price": 85.99,
+      "color": "silver",
+      "character": "standard",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/qpm3Rm3/Silver-wall-lamp.png",
+        "https://i.ibb.co/qpm3Rm3/Silver-wall-lamp.png",
+        "https://i.ibb.co/qpm3Rm3/Silver-wall-lamp.png"
+      ]
+    }
+  ],
+  "vases": [
+    {
+      "name": "Elegant black vase",
+      "collection": "interior",
+      "type": "vases",
+      "price": 35.99,
+      "color": "black",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/ZGpnTGj/Elegant-black-vase.png",
+        "https://i.ibb.co/ZGpnTGj/Elegant-black-vase.png",
+        "https://i.ibb.co/ZGpnTGj/Elegant-black-vase.png"
+      ]
+    },
+    {
+      "name": "Marble wase",
+      "collection": "interior",
+      "type": "vases",
+      "price": 155.99,
+      "color": "gray",
+      "character": "classic",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/74MMm2D/Marble-wase.png",
+        "https://i.ibb.co/74MMm2D/Marble-wase.png",
+        "https://i.ibb.co/74MMm2D/Marble-wase.png"
+      ]
+    },
+    {
+      "name": "Original fancy red vase",
+      "collection": "interior",
+      "type": "vases",
+      "price": 125.99,
+      "color": "red",
+      "character": "fancy",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/R4VVNR0/Original-fancy-red-vase.png",
+        "https://i.ibb.co/R4VVNR0/Original-fancy-red-vase.png",
+        "https://i.ibb.co/R4VVNR0/Original-fancy-red-vase.png"
+      ]
+    },
+    {
+      "name": "Transparent graduated cylinder",
+      "collection": "interior",
+      "type": "vases",
+      "price": 45.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/2sWS27w/Transparent-graduated-cylinder.png",
+        "https://i.ibb.co/2sWS27w/Transparent-graduated-cylinder.png",
+        "https://i.ibb.co/2sWS27w/Transparent-graduated-cylinder.png"
+      ]
+    },
+    {
+      "name": "White slim vase",
+      "collection": "interior",
+      "type": "vases",
+      "price": 65.99,
+      "color": "white",
+      "character": "modern",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.",
+      "images": [
+        "https://i.ibb.co/RyzMPDf/White-slim-vase.png",
+        "https://i.ibb.co/RyzMPDf/White-slim-vase.png",
+        "https://i.ibb.co/RyzMPDf/White-slim-vase.png"
+      ]
+    }
+  ]
+}
